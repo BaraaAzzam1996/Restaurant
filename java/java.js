@@ -19,37 +19,36 @@ function handle(e) {
     let price = document.getElementById('Price').value;
   
     let food = new FoodGenerator (generateId(), foodName, foodType, price);
-    food.renderfood()
+    food.renderfood();
   
     document.getElementById('FoodName').value = '';
     document.getElementById('Type').value = '';
     document.getElementById('Price').value = '';
   }
 
+  let foodForm = document.getElementById('foodForm');
+  foodForm.addEventListener('submit', handle);
     
 
+  FoodGenerator.prototype.renderfood = function() {
+    let body = document.getElementById('tableBody');
+    let row = document.createElement("tr");
+    let id = document.createElement("td");
+    id.textContent = this.Foodid;
+    row.appendChild(id);
+    let name = document.createElement("td");
+    name.textContent = this.foodName;
+    row.appendChild(name);
+    let type = document.createElement("td");
+    type.textContent = this.Type;
+    row.appendChild(type);
+    let price = document.createElement("td");
+    price.textContent = this.Price + " JD";
+    row.appendChild(price);
+    body.appendChild(row);
+  };
     
     
-let foodForm = document.getElementById('foodForm');
-foodForm.addEventListener('submit', handle);
 
 
 
-
-FoodGenerator.prototype.renderfood = function() {
-  let body = document.getElementById('tableBody');
-  let tablerow = document.createElement("tr");
-  let idcell = document.createElement("td");
-  idcell.textContent = this.Foodid;
-  tablerow.appendChild(idcell);
-  let namecell = document.createElement("td");
-  namecell.textContent = this.foodName;
-  tablerow.appendChild(namecell);
-  let typecell = document.createElement("td");
-  typecell.textContent = this.Type;
-  tablerow.appendChild(typecell);
-  let pricecell = document.createElement("td");
-  pricecell.textContent = this.Price + " JD";
-  tablerow.appendChild(pricecell);
-  body.appendChild(tablerow);
-};
