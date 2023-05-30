@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+     body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    header{
+        background-color: #4F200D;
+            color: #F9E0BB;
+            padding: 20px;
+    }
+    #center{text-align: center;}
+    header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        header li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        header li a {
+            text-decoration: none;
+            color:#F9E0BB;}
+        main{margin-top: 50px;
+        }
+        #FoodName{
+            margin-bottom: 10px;
+            color: #4F200D;
+            font-size: medium;
+            align-items: center;
+        }
+        #Type{
+            margin-bottom: 10px;
+            color: #4F200D;
+            border-radius: 5px;
+            border-color: #4F200D;
+            font-size: medium;
+            align-items: center;
+            
+            
+        }
+        #Price{margin-bottom: 10px;
+            color: #4F200D;
+            font-size: medium;
+            align-items: center;
+        }
+        label{
+            background-color:#B99B6B;
+            color:#4F200D;
+            font-style: italic;
+            font-size: medium;
+            font-weight: bold;
+            align-items: center;
+        }
+        input{
+            border-color: #4F200D;
+            border-radius: 5px;
+            
+            font-style: italic;
+        }
+        footer {
+            
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #4F200D;
+            font-weight: bolder;
+        }
+
+        footer a {
+            color: #4F200D;
+            width: 50px;
+            
+            
+            
+        }
+        table, th, td {
+         border: 1px solid;
+         border-color: #4F200D;
+         
+         border-collapse: collapse;
+    
+         font-size: medium;
+         font-style: italic;
+         font-weight: bolder;
+         margin-top: 15px;
+                          }
+                          
+       th{
+        background-color: #B99B6B;
+        color: #4F200D;
+       }
+       #tableBody{
+        color: #4F200D;
+        font-style: normal;
+       }
+
+      table{
+        text-align: center;
+    }
+
+      #modify{
+        width: 100px;
+        height:100px;
+        margin-left: 50%;        
+      }
+      
+
+</style>
+</head>
+<body>
+    <header>
+        <h1 id="center">Welcome To Bara's Resturant</h1>
+        <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/04/attachment_94168375-e1554226974295.jpg?auto=format&q=60&fit=max&w=930" id="modify">
+        <ul>
+            <li> <a href="index.html">Home Page</a></li>
+            <li><a href="food type.jpg">Guideline</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <form id="foodForm">
+            <label for="FoodName">Food Name</label>
+            <input type="text" value="Name" id="FoodName"><br>
+            <label for="Type">Choose Food Type</label>
+            <select name="Type Of Food" value="type" id="Type">
+                <option value="Fruit and Vegetabels">Fruit and vegetables</option>
+                <option value="Starchy food">Starchy food</option>
+                <option value="Dairy">Dairy</option>
+                <option value="Protein">Protein</option>
+                <option value="Fat">Fat</option>
+                
+            </select><br>
+        <label for="Price">Price</label>
+        <input type="text" value="please Enter The Price" id="Price" ><br>
+        <input type="submit" value="Submit"><br>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>FoodId</th>
+                    <th>Food Name</th>
+                    <th>Food Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+                
+               
+                
+            
+        </form>
+
+    </main>
+    <footer>
+        <p>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/"  class="fa fa-instagram"></a></p>
+        &copy; all righs reserved for Bara's Resturant 2023
+        <script src="./java/java.js"></script>
+        
+
+    </footer>
+</body>
+</html>
