@@ -14,8 +14,8 @@
             padding: 0;
         }
     header{
-        background-color: #4F200D;
-            color: #F9E0BB;
+        background-color: #374259;
+            color: #DDE6ED;
             padding: 20px;
     }
     #center{text-align: center;}
@@ -31,40 +31,40 @@
         
         header li a {
             text-decoration: none;
-            color:#F9E0BB;}
+            color:#DDE6ED;}
         main{margin-top: 50px;
         }
         #FoodName{
             margin-bottom: 10px;
-            color: #4F200D;
+            color: #11009E;
             font-size: medium;
             align-items: center;
         }
         #Type{
             margin-bottom: 10px;
-            color: #4F200D;
+            color: #11009E;
             border-radius: 5px;
-            border-color: #4F200D;
+            border-color: #374259;
             font-size: medium;
             align-items: center;
             
             
         }
         #Price{margin-bottom: 10px;
-            color: #4F200D;
+            color: #11009E;
             font-size: medium;
             align-items: center;
         }
         label{
-            background-color:#B99B6B;
-            color:#4F200D;
+            
+            color: #212A3E;
             font-style: italic;
             font-size: medium;
             font-weight: bold;
             align-items: center;
         }
         input{
-            border-color: #4F200D;
+            border-color: #4F709C;
             border-radius: 5px;
             
             font-style: italic;
@@ -74,59 +74,45 @@
             padding: 20px;
             text-align: center;
             font-size: 14px;
-            color: #4F200D;
+            color: #4F709C;
             font-weight: bolder;
         }
 
         footer a {
-            color: #4F200D;
+            color: #4F709C;
             width: 50px;
             
             
             
         }
-        table, th, td {
-         border: 1px solid;
-         border-color: #4F200D;
-         
-         border-collapse: collapse;
-    
-         font-size: medium;
-         font-style: italic;
-         font-weight: bolder;
-         margin-top: 15px;
-                          }
-                          
-       th{
-        background-color: #B99B6B;
-        color: #4F200D;
-       }
-       #tableBody{
-        color: #4F200D;
-        font-style: normal;
-       }
-
-      table{
-        text-align: center;
-    }
-
+        
       #modify{
         width: 100px;
         height:100px;
         margin-left: 90%;     
            
       }
-      
+      .submitbtn{
+        background-color: #212A3E;
+        color: #DDE6ED;
+        margin-left: 150px;
+      }
+
+      .submitbtn:hover {
+        text-transform: uppercase;
+
+      }
 
 </style>
 </head>
 <body>
     <header>
         <h1 id="center">Welcome To Bara's Resturant</h1>
-        <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/04/attachment_94168375-e1554226974295.jpg?auto=format&q=60&fit=max&w=930" id="modify">
+        <img src="https://content.wepik.com/statics/27197129/preview-page0.jpg" id="modify">
         <ul>
             <li> <a href="index.html">Home Page</a></li>
             <li><a href="food type.jpg">Guideline</a></li>
+            <li><a href="statistics.html">statistics</a></li>
         </ul>
 
     </header>
@@ -145,20 +131,8 @@
             </select><br>
         <label for="Price">Price</label>
         <input type="text" value="please Enter The Price" id="Price" ><br>
-        <input type="submit" value="Submit"><br>
-        <table id="table">
-            <thead>
-                <tr>
-                    <th>FoodId</th>
-                    <th>Food Name</th>
-                    <th>Food Type</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-
-            </tbody>
-        </table>
+        <input type="submit" class="submitbtn" value="Submit"><br>
+        
                 
                
                 

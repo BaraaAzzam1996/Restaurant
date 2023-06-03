@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+<style>
+   body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    header{
+        background-color: #374259;
+            color: #DDE6ED;
+            padding: 20px;
+    }
+    #center{text-align: center;}
+    header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        header li {
+            display: inline;
+            margin-right: 10px;
+        }
+        
+        header li a {
+            text-decoration: none;
+            color:#DDE6ED;}
+        main{margin-top: 50px;}
+        footer {
+            
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #4F709C;
+            font-weight: bolder;
+        }
+
+        footer a {
+            color: #4F709C;
+            width: 50px;
+            
+            
+            
+        }
+        
+      #modify{
+        width: 100px;
+        height:100px;
+        margin-left: 90%;     
+           
+      }
+      .submitbtn{
+        background-color: #212A3E;
+        color: #DDE6ED;
+        margin-left: 150px;
+      }
+
+      .submitbtn:hover {
+        text-transform: uppercase;
+
+      }
+        table, th, td {
+         border: 1px solid;
+         border-color: #212A3E;
+         
+         border-collapse: collapse;
+    
+         font-size: medium;
+         font-style: italic;
+         font-weight: bolder;
+         margin-top: 15px;
+                          }
+                          
+       th{
+        background-color: #DDE6ED;
+        color: #212A3E;
+       }
+       #tableBody{
+        color:#212A3E;
+        font-style: normal;
+       }
+
+      table{
+        text-align: center;
+      }
+</style>
+</head>
+<body>
+    <header>
+        <h1 id="center">Welcome To Bara's Resturant</h1>
+        <img src="https://content.wepik.com/statics/27197129/preview-page0.jpg" id="modify">       
+         <ul>
+            <li> <a href="index.html">Home Page</a></li>
+            <li><a href="food type.jpg">Guideline</a></li>
+            <li><a href="statistics.html">statistics</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>FoodId</th>
+                    <th>Food Name</th>
+                    <th>Food Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <p>
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/"  class="fa fa-instagram"></a></p>
+            &copy; all righs reserved for Bara's Resturant 2023
+            <script src="./java/statistics.js"></script>
+
+
+    </footer>
+</body>
+</html>
