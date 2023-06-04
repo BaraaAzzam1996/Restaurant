@@ -1,2 +1,3 @@
 # Restaurant
 the goal of this assignement is to creat a new repo with a new branch called events with only one page i will use html and java script and doing some style to this website
+In this lab i will add a new branch localStorage and adding a new page statistics.html. in the home page i will save the data on th local storage also i will create statistics.js where i will move the page from the home page to the new html page 
